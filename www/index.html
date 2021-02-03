@@ -15,24 +15,24 @@
 	<header>
 		<nav>
 			<div>
-				<a href="#">Passer au contenu principal</a>
-				<a href="#">Atteindre la barre de recherche</a>
+				<a href="#maincontent">Passer au contenu principal</a>
+				<a href="#searchbar">Atteindre la barre de recherche</a>
 			</div>
 			<ul>
-				<li><a href="#">Qui suis-je ?</a></li>
-				<li><a href="#">Mon dernier livre</a></li>
-				<li><a href="#">Mes livres</a></li>
-				<li><a href="#">Suivez-moi</a></li>
+				<li><a href="#bio">Qui suis-je ?</a></li>
+				<li><a href="#latestbook">Mon dernier livre</a></li>
+				<li><a href="#books">Mes livres</a></li>
+				<li><a href="#follow">Suivez-moi</a></li>
 			</ul>
-			<input type="search" placeholder="Recherche"
+			<input type="search" id="searchbar" placeholder="Recherche"
 			aria-label="Chercher quelque chose sur le site">
 			<button></button>
 		</nav>
 	</header>
-	<h1>Vincent Villeminot</h1>
+	<h1 id="maincontent">Vincent Villeminot</h1>
 		<b>Vers d'autres mondes.</b>
-	<h2>Qui suis-je ?</h2>
-		<a href="#">Passer "Qui suis-je ?"</a>
+	<h2 id="bio">Qui suis-je ?</h2>
+		<a href="#latestbook">Passer "Qui suis-je ?"</a>
 		<p>Vincent Villeminot est un auteur romanesque à temps plein. Ces livres sont destinés aux adultes comme aux plus jeunes. Il compte à son actif une trentaine d'ouvrages pour les enfants, et explore aujourd'hui dans ses romans pour les adolescents plusieurs facettes du fantastique et de l'anticipation.</p>
 		<ul>
 			<li><a href="https://www.babelio.com/auteur/Vincent-Villeminot/69432"><img height="30px" alt="Babelio" title="Vincent Villeminot sur Babelio" src="images\vincent-Villeminot.jpg" /></a></li>
@@ -40,8 +40,8 @@
 			<li><a href="https://booknode.com/auteur/vincent-villeminot"><img height="30px" alt="Booknode" title="Vincent Villeminot sur Booknode" src="images\vincent-Villeminot.jpg" /></a></li>
 		</ul>
 		<img height="100px" alt="" src="images\vincent-Villeminot.jpg" />
-	<h2>Mon dernier livre</h2>
-		<a href="#">Passer "Mon dernier livre"</a>
+	<h2 id="latestbook">Mon dernier livre</h2>
+		<a href="#books">Passer "Mon dernier livre"</a>
 		<img height="300px" alt="" src="images\comme-des-sauvages.jpg" />
 		<h3>Comme des sauvages</h3>
 		<p>
@@ -49,11 +49,31 @@
 			<div>Au coeur des collines, derrière la maison où Tom, 13 ans, passe ses vacances, se cache un mystère inimaginable. Quand, au détour d'un sentier, le jeune garçon tombe sur une immense clôture avec une mise en garde inquiétante, il se sent irrépressiblement attiré... Et il disparaît. Pendant des mois, sa grande soeur Emma va le chercher. Elle finira par découvrir la vérité. Mais pourra-t-elle rebrousser chemin et révéler au monde le terrible secret des Sources ?</div>
 		</p>
 		<ul>
-			<li><a href="https://www.cultura.com/comme-des-sauvages-9782266297752.html"><img height="30px" alt="Cultura" title="Acheter à Cultura" src="images\vincent-Villeminot.jpg" /></a></li>
-			<li><a href="https://livre.fnac.com/a14809951/Vincent-Villeminot-Comme-des-sauvages"><img height="30px" alt="Fnac" title="Acheter à Fnac" src="images\vincent-Villeminot.jpg" /></a></li>
+			<li><a href="https://www.cultura.com/comme-des-sauvages-9782266297752.html"><img height="30px" alt="Cultura" title="Acheter &quot;Comme des sauvages&quot; à Cultura" src="images\vincent-Villeminot.jpg" /></a></li>
+			<li><a href="https://livre.fnac.com/a14809951/Vincent-Villeminot-Comme-des-sauvages"><img height="30px" alt="Fnac" title="Acheter &quot;Comme des sauvages&quot; à la Fnac" src="images\vincent-Villeminot.jpg" /></a></li>
 		</ul>
-	<h2>Mes livres</h2>
-	<h2>Suivez-moi</h2>
+	<h2 id="books">Mes livres</h2>
+		<a href="#footer">Passer "Mes livres"</a>
+		<div>
+			<img height="300px" alt="" src="images\comme-des-sauvages.jpg" />
+			<h3>Livre de qualidad</h3>
+			<p>Les arbres c'est vert.</p>
+			<a href="#">En lire plus →</a>
+		</div>
+		<div>
+			<img height="300px" alt="" src="images\comme-des-sauvages.jpg" />
+			<h3>Livre de qualidad</h3>
+			<p>Les arbres c'est vert.</p>
+			<a href="#">En lire plus →</a>
+		</div>
+		<div>
+			<img height="300px" alt="" src="images\comme-des-sauvages.jpg" />
+			<h3>Livre de qualidad</h3>
+			<p>Les arbres c'est vert.</p>
+			<a href="#">En lire plus →</a>
+		</div>
+		<a href="#">En voir plus</a>
+	<h2 id="follow">Suivez-moi</h2>
 	<form action="#" id="contactForm" method="post">
 		<fieldset>
 			<legend>Exprimez vos envies et je vous rappelle.</legend>
@@ -65,7 +85,7 @@
 			</div>
 			<div>
 				<input type="checkbox" id="data" name="data" required />
-				<label for="data">En envoyant ce message, vous consentez à la collecte et au traitement des	données renseignées ci-dessus pour l’usage exclusif. En savoir plus.</label>
+				<label for="data">En envoyant ce message, vous consentez à la collecte et au traitement des	données renseignées ci-dessus pour l’usage exclusif. <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">En savoir plus.</a></label>
 			</div>
 			<div>
 				<input type="submit" value="Envoyer"/>
@@ -76,6 +96,6 @@
 			</p>
 		</fieldset>
 	</form>
-	<footer></footer>
+	<footer id="footer" ></footer>
 </body>
 </html>
