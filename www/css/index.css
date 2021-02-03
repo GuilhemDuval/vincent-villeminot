@@ -4,6 +4,10 @@
     left : -1000em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Barre de navigation */
 nav {
     position: fixed;
@@ -19,5 +23,11 @@ header > div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 180px;
+    margin-top: 155px;
+}
+
+h2 {
+    /* Navigation par ancres et barre de navigation */
+    margin-top:-155px;
+    padding-top:155px;
 }
