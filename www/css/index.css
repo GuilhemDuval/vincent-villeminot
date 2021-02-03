@@ -1,0 +1,23 @@
+/* Boutons cachés */
+#hidden1, #hidden2, #hidden3, #hidden4, #hidden5, #hidden6 {
+    position: absolute;
+    left : -1000em;
+}
+
+/* Barre de navigation */
+nav {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left:0;
+    right:0;
+}
+
+/* Zone principale de l'entête */
+header > div {
+    background-image: url("../images/main-illustration.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 180px;
+}
