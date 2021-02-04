@@ -1,17 +1,75 @@
+/*---------*/
+/* IMPORTS */
+/*---------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "DCC - Ash";
+    src: url("../fonts/DCC_-_Ash.otf") format("otf");
+}
+
+/*----------------*/
+/* PARTIE GLOBALE */
+/*----------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+h2 {
+    font-family: 'DCC - Ash', sans-serif;
+    font-size: 72px;
+}
+
+b {
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+}
+
 /* Boutons cachés */
 #hidden1, #hidden2, #hidden3, #hidden4, #hidden5, #hidden6 {
     position: absolute;
     left : -1000em;
 }
 
-html {
-    scroll-behavior: smooth;
+section {
+    /* Navigation par ancres et barre de navigation */
+    margin-top:-80px;
+    padding-top:80px;
 }
+
+section > div {
+    padding-top: 60px;
+    padding-left: 12%;
+    padding-bottom: 60px;
+    padding-right: 12%;
+}
+
+section > div > div {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*-------------------*/
+/* PARTIE EXCEPTIONS */
+/*-------------------*/
 
 /* Barre de navigation */
 nav {
     position: fixed;
-    background-color: white;
+    color: white;
+    background-color: black;
     top: 0;
     left:0;
     right:0;
@@ -23,11 +81,63 @@ header > div {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 155px;
+    margin-top: 80px;
 }
 
-h2 {
-    /* Navigation par ancres et barre de navigation */
-    margin-top:-155px;
-    padding-top:155px;
+section#latestbook > div {
+    background-image: url("../images/latestbook-background.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section#latestbook > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section#latestbook > div > div > div:nth-of-type(1) {
+    width: 35%;
+}
+
+section#latestbook > div > div > div:nth-of-type(1) > img {
+    width: 100%;
+    height: auto;
+}
+
+section#latestbook > div > div > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+}
+
+section#latestbook > div > div > div:nth-of-type(2) > h3 {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+section#latestbook > div > div > div:nth-of-type(2) > p:nth-of-type(1) {
+    font-size: 24px;
+}
+
+section#latestbook > div > div > div:nth-of-type(2) > p:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+section#latestbook > div > div > div:nth-of-type(2) > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+section#latestbook > div > div > div:nth-of-type(2) > ul > li > a > img {
+    margin-right: 80px;
+    height: 80px;
+    width: auto;
+}
+
+body > footer {
+    background-color: #303030;
 }
