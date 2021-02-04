@@ -2,7 +2,7 @@
 /* IMPORTS */
 /*---------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;600;700&display=swap');
 
 @font-face {
     font-family: "DCC - Ash";
@@ -37,6 +37,11 @@ p {
     line-height: 1.2;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* Boutons cachés */
 #hidden1, #hidden2, #hidden3, #hidden4, #hidden5, #hidden6 {
     position: absolute;
@@ -50,9 +55,9 @@ section {
 }
 
 section > div {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 12%;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     padding-right: 12%;
 }
 
@@ -180,6 +185,62 @@ section#latestbook > div > div > div:nth-of-type(2) > ul {
 section#latestbook > div > div > div:nth-of-type(2) > ul > li > a > img {
     height: 80px;
     width: auto;
+}
+
+section#books > div > div > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+
+section#books > div > div > div:nth-of-type(1) > div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+section#books > div > div > div:nth-of-type(1) > div > div {
+    width: 80%;
+}
+
+section#books > div > div > div:nth-of-type(1) > div > div > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+section#books > div > div > div:nth-of-type(1) > div > h3 {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+section#books > div > div > div:nth-of-type(1) > div > p:first-of-type {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section#books > div > div > div:nth-of-type(1) > div > p > a {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+section#books > div > div > div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+}
+
+section#books > div > div > div:nth-of-type(2) > a {
+    display: inline;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 20px 80px 20px 80px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 body > footer {
