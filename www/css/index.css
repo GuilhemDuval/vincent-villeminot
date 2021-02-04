@@ -34,6 +34,7 @@ b {
 
 p {
     font-size: 18px;
+    line-height: 1.2;
 }
 
 /* Boutons cachés */
@@ -84,6 +85,46 @@ header > div {
     margin-top: 80px;
 }
 
+section#bio > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#bio > div > div > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+section#bio > div > div > div:nth-of-type(1) > p {
+    margin-bottom: 40px;
+}
+
+section#bio > div > div > div:nth-of-type(1) > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section#bio > div > div > div:nth-of-type(1) > ul > li > a > img {
+    height: 80px;
+    width: auto;
+}
+
+section#bio > div > div > div:nth-of-type(2) {
+    width: 40%;
+    height: 100%;
+}
+
+section#bio > div > div > div:nth-of-type(2) > img {
+    width: 100%;
+    height: auto;
+}
+
+
 section#latestbook > div {
     background-image: url("../images/latestbook-background.svg");
     background-position: center;
@@ -95,6 +136,7 @@ section#latestbook > div > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 section#latestbook > div > div > div:nth-of-type(1) {
@@ -109,31 +151,33 @@ section#latestbook > div > div > div:nth-of-type(1) > img {
 section#latestbook > div > div > div:nth-of-type(2) {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 55%;
 }
 
 section#latestbook > div > div > div:nth-of-type(2) > h3 {
     font-weight: 700;
     font-size: 35px;
+    margin-bottom: 10px;
 }
 
 section#latestbook > div > div > div:nth-of-type(2) > p:nth-of-type(1) {
     font-size: 24px;
+    margin-bottom: 40px;
 }
 
 section#latestbook > div > div > div:nth-of-type(2) > p:nth-of-type(2) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 section#latestbook > div > div > div:nth-of-type(2) > ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 section#latestbook > div > div > div:nth-of-type(2) > ul > li > a > img {
-    margin-right: 80px;
     height: 80px;
     width: auto;
 }
