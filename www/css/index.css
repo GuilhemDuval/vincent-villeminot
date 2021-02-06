@@ -430,7 +430,8 @@ section#books > div > div > div:nth-of-type(2) > a:hover, section#books > div > 
 }
 
 section#follow > div > div > form > fieldset {
-  width:70%;
+  width:75%;
+  font-size: 18px;
 }
 
 section#follow > div > div > form > fieldset > legend {
@@ -445,7 +446,7 @@ section#follow > div > div > form > fieldset > div > input {
 }
 
 section#follow > div > div > form > fieldset > div > input[type=text] {
-  height: 40px;
+  height: 50px;
   width : 350px;
   padding-left: 20px;
 }
@@ -459,8 +460,12 @@ section#follow > div > div > form > fieldset > div > input[type=checkbox] {
 }
 
 section#follow > div > div > form > fieldset > div > input[type=submit] {
+<<<<<<< HEAD
   height: 40px;
   border-radius: 10px;
+=======
+  height: 50px;
+>>>>>>> 5389ac6b1482098c24714c74971c5b5972f3e7f0
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 30px;
