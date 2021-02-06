@@ -359,7 +359,6 @@ section#books > div > div > div:nth-of-type(1) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
     margin-bottom: 80px;
 }
 
@@ -367,6 +366,7 @@ section#books > div > div > div:nth-of-type(1) > div {
     width: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 section#books > div > div > div:nth-of-type(1) > div > div {
@@ -460,6 +460,7 @@ section#follow > div > div > form > fieldset > div > input[type=checkbox] {
 
 section#follow > div > div > form > fieldset > div > input[type=submit] {
   height: 40px;
+  border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 30px;
