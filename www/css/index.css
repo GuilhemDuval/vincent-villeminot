@@ -9,6 +9,32 @@
     src: url("../fonts/DCC_-_Ash.otf") format("otf");
 }
 
+/*------------*/
+/* ANIMATIONS */
+/*------------*/
+
+@keyframes wigglecircle {
+    0% { transform: rotate(0deg); }
+    5% { transform: rotate(10deg); }
+    15% { transform: rotate(-10deg); }
+    20% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes wigglerectangle {
+    0% { transform: translate(0px, 0px); }
+    5% { transform: translate(-5px, -2px); }
+    15% { transform: translate(5px, 2px); }
+    20% { transform: translate(0px, 0px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+@keyframes wigglenavigation {
+    0% { transform: translate(0px, -5px); }
+    50% { transform: translate(0px, 5px); }
+    100% { transform: translate(0px, -5px); }
+}
+
 /*----------------*/
 /* PARTIE GLOBALE */
 /*----------------*/
@@ -42,6 +68,9 @@ a {
     text-decoration: none;
 }
 
+a:focus, *:focus {
+    outline: thin dotted #164300;
+}
 /* Boutons cachés */
 #hidden1, #hidden2, #hidden3, #hidden4, #hidden5, #hidden6 {
     position: absolute;
@@ -59,14 +88,6 @@ a:hover .cls-1, a:focus .cls-1  {
 
 .cls-2 {
     fill: #fff;
-}
-
-@keyframes wigglecircle {
-    0% { transform: rotate(0deg); }
-    5% { transform: rotate(10deg); }
-    15% { transform: rotate(-10deg); }
-    20% { transform: rotate(0deg); }
-    100% { transform: rotate(0deg); }
 }
 
 a:hover svg, a:focus svg {
@@ -124,38 +145,38 @@ nav {
 /* Zone principale de l'entête */
 
 header > nav {
-  position: relative;
-  position: fixed;
-  height: 110px;
-  z-index: 5;
+    position: relative;
+    position: fixed;
+    height: 110px;
+    z-index: 5;
 }
 
 header > nav > div:nth-of-type(2) {
-  display: flex;
-  font-weight: 700;
+    display: flex;
+    font-weight: 700;
 }
 
 header > nav > div:nth-of-type(2) > h1 {
-  font-size: 36px;
-  margin-top: 42px;
-  margin-bottom: 17px;
-  margin-left: 80px;
+    font-size: 36px;
+    margin-top: 42px;
+    margin-bottom: 17px;
+    margin-left: 80px;
 }
 
 header > nav > div:nth-of-type(2) > ul {
-  display: flex;
-  position: absolute;
-  right: 0;
-  font-size: 20px;
-  margin-top: 50px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin-top: 50px;
 }
 
 header > nav > div:nth-of-type(2) > ul > li {
-  margin-right: 45px;
+    margin-right: 45px;
 }
 
 header > nav > div:nth-of-type(2) > ul > li > a:hover, header > nav > div:nth-of-type(2) > ul > li > a:focus {
-  text-decoration: underline white 3px;
+    text-decoration: underline white 3px;
 }
 
 header > div {
@@ -227,12 +248,6 @@ header > div > div:nth-of-type(2) > a {
     margin-left: auto;
     margin-right: auto;
     height: auto;
-}
-
-@keyframes wigglenavigation {
-    0% { transform: translate(0px, -5px); }
-    50% { transform: translate(0px, 5px); }
-    100% { transform: translate(0px, -5px); }
 }
 
 header > div > div:nth-of-type(2) > a > svg {
@@ -415,70 +430,59 @@ section#books > div > div > div:nth-of-type(2) > a {
     font-size: 30px;
 }
 
-@keyframes wigglerectangle {
-    0% { transform: translate(0px, 0px); }
-    5% { transform: translate(-5px, -2px); }
-    15% { transform: translate(5px, 2px); }
-    20% { transform: translate(0px, 0px); }
-    100% { transform: translate(0px, 0px); }
-}
-
 section#books > div > div > div:nth-of-type(2) > a:hover, section#books > div > div > div:nth-of-type(2) > a:focus {
     background-color: #164900;
-    animation: wigglerectangle ease-in-out 2.5s infinite;
     transition-duration: 0.5s;
 }
 
 section#follow > div > div > form > fieldset {
-  width:75%;
-  font-size: 18px;
+    width:75%;
+    font-size: 18px;
 }
 
 section#follow > div > div > form > fieldset > legend {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 section#follow > div > div > form > fieldset > div > input {
- margin-top: 15px;
- background-color:lightgrey;
- border:none;
- font-family: 'Krub', sans-serif;
+    margin-top: 15px;
+    background-color:lightgrey;
+    border:none;
+    font-family: 'Krub', sans-serif;
 }
 
 section#follow > div > div > form > fieldset > div > input[type=text] {
-  height: 50px;
-  width : 350px;
-  padding-left: 20px;
+    height: 50px;
+    width : 350px;
+    border-radius: 10px;
+    padding-left: 20px;
 }
 
 section#follow > div > div > form > fieldset > div:nth-of-type(2) > input[type=text] {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 section#follow > div > div > form > fieldset > div > input[type=checkbox] {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 section#follow > div > div > form > fieldset > div > input[type=submit] {
-<<<<<<< HEAD
-  height: 40px;
-  border-radius: 10px;
-=======
-  height: 50px;
->>>>>>> 5389ac6b1482098c24714c74971c5b5972f3e7f0
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 30px;
-  background-color:black;
-  color:white;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    background-color:black;
+    color:white;
 }
-section#follow > div > div > form > fieldset > div > input[type=submit]:hover{
-  background-color: #164900;
-  transition-duration: 0.5s;
+
+section#follow > div > div > form > fieldset > div > input[type=submit]:hover, section#follow > div > div > form > fieldset > div > input[type=submit]:focus {
+    background-color: #164900;
+    transition-duration: 0.5s;
 }
 
 section#follow {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 body > footer {
