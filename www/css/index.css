@@ -148,9 +148,17 @@ header > div > div:nth-of-type(1) {
 header > div > div:nth-of-type(1) > input {
     border: none;
     border-radius: 50px;
-    background-color: grey;
+    background-color: #C4C4C4;
     width: 300px;
     height: 30px;
+}
+
+header > div > div:nth-of-type(1) > button {
+    background: url("../images/search.svg");
+    border: none;
+    height: 22px;
+    width: 30px;
+    background-repeat: no-repeat;
 }
 
 header > div > blockquote {
@@ -160,7 +168,9 @@ header > div > blockquote {
     margin: auto;
     color: white;
     width: 30%;
-    left: 34%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header > div > blockquote > p {
@@ -170,7 +180,12 @@ header > div > blockquote > p {
 
 header > div > blockquote > footer {
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+img#navigation {
+    width: 10%;
+    margin-bottom: -75%;
 }
 
 section#bio > div > div {
