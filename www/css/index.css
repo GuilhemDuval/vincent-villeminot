@@ -48,6 +48,19 @@ a {
     left : -1000em;
 }
 
+.cls-1  {
+    fill: #303030;
+}
+
+a:hover .cls-1, a:focus .cls-1  {
+    fill: #164900;
+    transition-duration: 0.5s;
+}
+
+.cls-2 {
+    fill: #fff;
+}
+
 section {
     /* Navigation par ancres et barre de navigation */
     margin-top:-80px;
@@ -114,7 +127,13 @@ section#bio > div > div > div:nth-of-type(1) > ul {
     justify-content: space-around;
 }
 
-section#bio > div > div > div:nth-of-type(1) > ul > li > a > img {
+section#bio > div > div > div:nth-of-type(1) > ul > li > a {
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+
+section#bio > div > div > div:nth-of-type(1) > ul > li > a > svg {
     height: 80px;
     width: auto;
 }
@@ -182,7 +201,13 @@ section#latestbook > div > div > div:nth-of-type(2) > ul {
     justify-content: space-around;
 }
 
-section#latestbook > div > div > div:nth-of-type(2) > ul > li > a > img {
+section#latestbook > div > div > div:nth-of-type(2) > ul > li > a {
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+
+section#latestbook > div > div > div:nth-of-type(2) > ul > li > a > svg {
     height: 80px;
     width: auto;
 }
