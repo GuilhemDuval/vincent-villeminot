@@ -384,6 +384,52 @@ section#books > div > div > div:nth-of-type(2) > a:hover, section#books > div > 
     transition-duration: 0.5s;
 }
 
+section#follow > div > div > form > fieldset {
+  width:70%;
+}
+
+section#follow > div > div > form > fieldset > legend {
+  margin-bottom: 20px;
+}
+
+section#follow > div > div > form > fieldset > div > input {
+ margin-top: 15px;
+ background-color:lightgrey;
+ border:none;
+ font-family: 'Krub', sans-serif;
+}
+
+section#follow > div > div > form > fieldset > div > input[type=text] {
+  height: 40px;
+  width : 350px;
+  padding-left: 20px;
+}
+
+section#follow > div > div > form > fieldset > div:nth-of-type(2) > input[type=text] {
+  margin-bottom: 20px;
+}
+
+section#follow > div > div > form > fieldset > div > input[type=checkbox] {
+  margin-bottom: 10px;
+}
+
+section#follow > div > div > form > fieldset > div > input[type=submit] {
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+  background-color:black;
+  color:white;
+}
+section#follow > div > div > form > fieldset > div > input[type=submit]:hover{
+  background-color: #164900;
+  transition-duration: 0.5s;
+}
+
+section#follow {
+  margin-bottom: 50px;
+}
+
 body > footer {
     background-color: #303030;
 }
