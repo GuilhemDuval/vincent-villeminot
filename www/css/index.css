@@ -87,6 +87,20 @@ section > div {
     padding-right: 12%;
 }
 
+section > div > a:focus {
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #164900;
+    color: white;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    animation: wigglerectangle ease-in-out 2.5s infinite;
+}
+
 section > div > div {
     margin-top: 40px;
     margin-left: 10%;
