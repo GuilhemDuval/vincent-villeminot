@@ -493,4 +493,36 @@ section#follow {
 
 body > footer {
     background-color: #303030;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:white;
+    font-size: 18px;
+}
+
+body > footer > a> img {
+  height: 50px;
+}
+body > footer > ul:first-of-type {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+body > footer > ul:last-of-type > li {
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+
+body > footer > ul:first-of-type > li:first-of-type {
+  font-size: 30px;
+}
+
+body > footer > ul > li > a:hover {
+  text-decoration: underline white 2px;
 }
