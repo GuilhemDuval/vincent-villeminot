@@ -465,6 +465,10 @@ section#follow > div > div > form > fieldset > div:nth-of-type(2) > input[type=t
 section#follow > div > div > form > fieldset > div > input[type=checkbox] {
     margin-bottom: 10px;
 }
+section#follow > div > div > form > fieldset > div > label > a:hover {
+  text-decoration: underline #164900 2px;
+}
+
 
 section#follow > div > div > form > fieldset > div > input[type=submit] {
     height: 50px;
@@ -475,6 +479,8 @@ section#follow > div > div > form > fieldset > div > input[type=submit] {
     background-color:black;
     color:white;
 }
+
+
 
 section#follow > div > div > form > fieldset > div > input[type=submit]:hover, section#follow > div > div > form > fieldset > div > input[type=submit]:focus {
     background-color: #164900;
