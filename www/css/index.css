@@ -470,7 +470,7 @@ section#follow > div > div > form > fieldset > div > label > a:hover {
 }
 
 section#follow > div > div > form > fieldset > div > label > a {
-  text-decoration: underline black 2px;
+  text-decoration: underline black 1px;
 }
 
 
@@ -495,25 +495,30 @@ section#follow {
     margin-bottom: 50px;
 }
 
-body > footer {
+/* body > footer {
   background-image: url("../images/footer-background.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size:100% 100% ;
-    padding-left: 20%;
-    padding-right: 20%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    color:white;
-    font-size: 18px;
+  width:100%
+  background-size: 100% 100%;
+} */
+
+body > footer > div {
+  background-color: black;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  color:white;
+  font-size: 18px;
 }
 
-body > footer > a> img {
+body > footer > div > a> img {
   height: 50px;
 }
-body > footer > ul:first-of-type {
+body > footer> div > ul:first-of-type {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -521,32 +526,36 @@ body > footer > ul:first-of-type {
   margin-top: 15px;
 }
 
-body > footer > ul:last-of-type > li {
+body > footer > div > ul:last-of-type > li {
   margin-top:15px;
   margin-bottom: 15px;
 }
 
-body > footer > ul:first-of-type > li:first-of-type {
+body > footer > div > ul:first-of-type > li:first-of-type {
   font-size: 30px;
   margin-bottom: 25px;
 }
 
-body > footer > ul > li > a {
-  text-decoration: underline white 2px;
+body > footer > div > ul:first-of-type > li > a {
+  text-decoration: underline white 1px;
 }
-body > footer > ul > li > a:hover {
+body > footer>div > ul > li > a:hover {
   text-decoration: underline white 3px;
 }
 
-body > footer > a:focus {
+body > footer> div > a:focus {
  outline: thin dotted #FFFFFF;
 }
 
-body> footer > a {
+body> footer> div > a {
   height: 50px;
   width: 50px;
 }
 
-body > footer > ul > li > a:focus {
+body > footer > div> ul > li > a:focus {
+  outline: thin dotted #ffffff;
+}
+
+body > header > nav a:focus {
   outline: thin dotted #ffffff;
 }
