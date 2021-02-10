@@ -232,7 +232,7 @@ header > div > div:nth-of-type(1) > label {
     left: -100px;
 }
 
-header > div > blockquote {
+header > div > div:nth-of-type(2) {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -244,24 +244,24 @@ header > div > blockquote {
     transform: translate(-50%, -50%);
 }
 
-header > div > blockquote > p {
+header > div > div:nth-of-type(2) > blockquote > p {
     font-weight: 600;
     font-size: 30px;
 }
 
-header > div > blockquote > figcaption {
+header > div >  div:nth-of-type(2) > figcaption {
     font-size: 14px;
     margin-top: 30px;
 }
 
-header > div > div:nth-of-type(2) {
+header > div > div:nth-of-type(3) {
     position: absolute;
     bottom: 60px;
     left: 0;
     right: 0;
 }
 
-header > div > div:nth-of-type(2) > a {
+header > div > div:nth-of-type(3) > a {
     display: block;
     width: 50px;
     margin-left: auto;
@@ -269,14 +269,14 @@ header > div > div:nth-of-type(2) > a {
     height: auto;
 }
 
-header > div > div:nth-of-type(2) > a > svg {
+header > div > div:nth-of-type(3) > a > svg {
     width: 50px;
     height: auto;
     animation: wigglenavigation ease-in-out 2s infinite;
     display: inline-block;
 }
 
-header > div > div:nth-of-type(2) > a > svg .st0 {
+header > div > div:nth-of-type(3) > a > svg .st0 {
     fill: white;
 }
 
