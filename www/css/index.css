@@ -142,8 +142,6 @@ nav {
     right:0;
 }
 
-/* Zone principale de l'entête */
-
 header > nav {
     position: relative;
     position: fixed;
@@ -228,6 +226,12 @@ header > div > div:nth-of-type(1) > button {
     height: 22px;
     width: 30px;
     background-repeat: no-repeat;
+}
+
+header > div > div:nth-of-type(1) > label {
+    position: absolute;
+    top: -100px;
+    left: -100px;
 }
 
 header > div > blockquote {
@@ -457,6 +461,12 @@ section#follow > div > div > form > fieldset {
     font-size: 18px;
 }
 
+section#follow > div > div > form > fieldset > div:nth-of-type(1) > label, section#follow > div > div > form > fieldset > div:nth-of-type(2) > label {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
 section#follow > div > div > form > fieldset > legend {
     margin-bottom: 20px;
 }
@@ -468,7 +478,7 @@ section#follow > div > div > form > fieldset > div > input {
     font-family: 'Krub', sans-serif;
 }
 
-section#follow > div > div > form > fieldset > div > input[type=text] {
+section#follow > div > div > form > fieldset > div > input[type=text], section#follow > div > div > form > fieldset > div > input[type=email] {
     height: 50px;
     width : 350px;
     border-radius: 10px;
@@ -556,7 +566,7 @@ body > footer > div > ul:first-of-type > li:first-of-type {
 body > footer > div > ul:first-of-type > li > a {
   text-decoration: underline white 1px;
 }
-body > footer>div > ul > li > a:hover {
+body > footer >div > ul > li > a:hover {
   text-decoration: underline white 3px;
 }
 
