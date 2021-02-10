@@ -187,12 +187,12 @@ header > div {
     position: relative;
 }
 
-header > div > span > img:nth-of-type(1) {
+header > div > div:nth-of-type(1) > img:nth-of-type(1) {
     width: 40%;
     position: absolute;
     right: 0;
 }
-header > div > span > img:nth-of-type(2) {
+header > div > div:nth-of-type(1) > img:nth-of-type(2) {
     width: 40%;
     position: absolute;
     bottom: -1px;
@@ -200,7 +200,7 @@ header > div > span > img:nth-of-type(2) {
     left: 0;
 }
 
-header > div > div:nth-of-type(1) {
+header > div > div:nth-of-type(2) {
     float: right;
     margin-right: 96px;
     color: white;
@@ -209,7 +209,7 @@ header > div > div:nth-of-type(1) {
     position: relative;
 }
 
-header > div > div:nth-of-type(1) > input {
+header > div > div:nth-of-type(2) > input {
     border: none;
     border-radius: 50px;
     background-color: #C4C4C4;
@@ -218,7 +218,7 @@ header > div > div:nth-of-type(1) > input {
     padding-left: 20px;
 }
 
-header > div > div:nth-of-type(1) > button {
+header > div > div:nth-of-type(2) > button {
     background: url("../images/search.svg");
     border: none;
     height: 22px;
@@ -226,13 +226,13 @@ header > div > div:nth-of-type(1) > button {
     background-repeat: no-repeat;
 }
 
-header > div > div:nth-of-type(1) > label {
+header > div > div:nth-of-type(2) > label {
     position: absolute;
     top: -100px;
     left: -100px;
 }
 
-header > div > blockquote {
+header > div > div:nth-of-type(3) {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -244,24 +244,24 @@ header > div > blockquote {
     transform: translate(-50%, -50%);
 }
 
-header > div > blockquote > p {
+header > div > div:nth-of-type(3) > blockquote > p {
     font-weight: 600;
     font-size: 30px;
 }
 
-header > div > blockquote > figcaption {
+header > div >  div:nth-of-type(3) > cite {
     font-size: 14px;
     margin-top: 30px;
 }
 
-header > div > div:nth-of-type(2) {
+header > div > div:nth-of-type(4) {
     position: absolute;
     bottom: 60px;
     left: 0;
     right: 0;
 }
 
-header > div > div:nth-of-type(2) > a {
+header > div > div:nth-of-type(4) > a {
     display: block;
     width: 50px;
     margin-left: auto;
@@ -269,14 +269,14 @@ header > div > div:nth-of-type(2) > a {
     height: auto;
 }
 
-header > div > div:nth-of-type(2) > a > svg {
+header > div > div:nth-of-type(4) > a > svg {
     width: 50px;
     height: auto;
     animation: wigglenavigation ease-in-out 2s infinite;
     display: inline-block;
 }
 
-header > div > div:nth-of-type(2) > a > svg .st0 {
+header > div > div:nth-of-type(4) > a > svg .st0 {
     fill: white;
 }
 
